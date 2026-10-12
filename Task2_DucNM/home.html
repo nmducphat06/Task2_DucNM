@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a class="logo" href="index.html">Management System</a>
+        <div class="nav-links"><a href="index.html">Home</a><a href="login.html">Log out</a></div>
+    </nav>
+    <main class="courses">
+        <section class="welcome">
+            <h2>Welcome to My Website</h2>
+            <p>Learn web development with our courses.</p>
+        </section>
+        <h3 style="text-align:center;">Our Courses</h3>
+        <section class="course-grid">
+            <div class="course"><h3>HTML</h3><p>Learn how to create the structure of a web pages using headings, paragraphs, images, and links.</p><button style="background-color: #ff8959;" onclick="showInfo('HTML')">Learn More</button></div>
+            <div class="course"><h3>CSS</h3><p>Learn how to style web pages with colors, fonts, spacing, and attractive layouts.</p><button style="background-color: #4596ef;" onclick="showInfo('CSS')">Learn More</button></div>
+            <div class="course"><h3>Bootstrap</h3><p>Build responsive websites quickly using Bootstrap's grid system and components.</p><button style="background-color: #9a6cf5;" onclick="showInfo('Bootstrap')">Learn More</button></div>
+            <div class="course"><h3>JavaScript</h3><p>Make web pages interactive with button clicks, form validation, and dynamic content.</p><button style="background-color: #e6c52c;" onclick="showInfo('JavaScript')">Learn More</button></div>
+        </section>
+        <p id="courseInfo"></p>
+    </main>
+    <footer>Copyright 2026 Management System</footer>
+    <script>
+        function showInfo(course) {
+            if(course == "HTML"){
+                alert("HTML stands for HyperText Markup Language. It creates the structure of a web page using headings, paragraphs, images, and links.");
+            }else if(course == "CSS"){
+                alert("CSS stands for Cascading Style Sheets. It contains the appearance of web pages, including colors, fonts, spacing, and attractive layouts.");
+            }else if(course == "Bootstrap"){
+                alert("Bootstrap is a front-end framework. It provides ready-made components and a responsive grid system to build websites quickly.");
+            }else if(course == "JavaScript"){
+                alert("JavaScript is a programming language that makes web pages interactive. It can handle button clicks, form validation, popups, and dynamic content.")
+            }
+        }
+    </script>
+</body>
+</html>
